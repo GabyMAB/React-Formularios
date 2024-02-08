@@ -1,6 +1,4 @@
 import { useState, useRef } from "react";
-
- 
 const NoControlado = () =>{
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -12,9 +10,7 @@ const NoControlado = () =>{
         const data = new FormData(form.current);
         //console.log(...data.entries());
         const {title,description,state} = Object.fromEntries([...data.entries(),]);
-
         console.log(title,description,state);
-
         //VALIDAR DATOS
         if(!title.trim() ||!description.trim() || !state.trim())
          return setError("Llena todos los campos");

@@ -1,6 +1,4 @@
 import { useState } from "react";
-
- 
 const Controlado = () =>{
     const [todo, setTodo] = useState ({
         title: 'todo#1',
